@@ -18,8 +18,8 @@ for i,obj in enumerate(csv["Country/Region"]):
     if obj in country_list_:
         iList[country_list_.index(obj)] = i
 
-fig, ax = plt.subplots(1,1, dpi=300, figsize=(3,3))
-fig2, ax2 = plt.subplots(1,1, dpi=300, figsize=(3,3))
+fig, ax = plt.subplots(1,1, dpi=150, figsize=(3,3))
+fig2, ax2 = plt.subplots(1,1, dpi=150, figsize=(3,3))
 
 for i_c, cntry in zip(iList, country_list_):
     time_series = csv.loc[i_c][4:]
