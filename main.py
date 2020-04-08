@@ -62,8 +62,8 @@ if file_ == "./corona_time_series.csv":
     fig2.tight_layout()
     fig2.savefig('NeuePatienten-Tage_%dTageDurchschnitt.png'%avg_days)
 else:
-    ax.set_ylabel('Neue Tote letzte %d Tage' % avg_days)
-    ax.set_xlabel('Tote Total')
+    ax.set_ylabel('Neue Tode letzte %d Tage' % avg_days)
+    ax.set_xlabel('Tode Total')
     ax.legend()
     fig.tight_layout()
     fig.savefig('NeueTote-ToteTotal_%dTage.png'%avg_days)
@@ -72,8 +72,8 @@ else:
     fig.tight_layout()
     fig.savefig('NeueTote-ToteTotal_%dTage_loglog.png'%avg_days)
 
-    ax2.set_ylabel("$\\varnothing$ neue Tote pro Tag")
-    ax2.set_xlabel("Tage nach 100 erreichten Toten")
+    ax2.set_ylabel("$\\varnothing$ neue Tode pro Tag")
+    ax2.set_xlabel("Tage nach 100 erreichten Toden")
     ax2.legend()
     fig2.tight_layout()
     fig2.savefig('NeueTote-Tage_%dTageDurchschnitt.png'%avg_days)
